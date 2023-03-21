@@ -182,7 +182,7 @@ img {
     gap: 16px;
 }
 
-.footer-soc-item {
+.footer-soc-item-content {
     width: 40px;
     height: 40px;
     background: rgba(255, 255, 255, 0.1);;
@@ -192,8 +192,13 @@ img {
     justify-content: center;
 }
 
-.footer-soc-item:hover,
-.footer-soc-item:focus {
+.footer-soc-item-content .soc-icon{
+    width: 24px;
+    height: 24px;
+}
+
+.footer-soc-item-content:hover,
+.footer-soc-item-content:focus {
     background: #31D0AA;;
 }
 
@@ -291,10 +296,7 @@ img {
 /*!--------------------INDEX-PAGE----------------------*/
 /**-----------------------HERO----------------------*/
 .hero{ 
-    background-image:  linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../images/hero-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    
 }
 .hero-title{
     font-size: 56px;
@@ -338,6 +340,15 @@ img {
 .hero-container{
     padding-top: 188px;
     padding-bottom: 185px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
 }
 
 /**------------COMPANY_POLICY---------------*/
@@ -441,6 +452,15 @@ img {
 
 
 .member-soc-item {
+   
+}
+.soc-link:hover,
+.soc-link:focus{
+    background:#404BBF;
+}
+
+
+.soc-link {
     width: 40px;
     height: 40px;
     background: #4D5AE5;
@@ -449,16 +469,6 @@ img {
     align-items: center;
     justify-content: center;
 }
-.member-soc-item:hover,
-.member-soc-item:focus{
-    background:#404BBF;
-}
-
-
-.soc-link {
-    width: 16px;
-    height: 16px;
-}
 
 .soc-link-footer{
     width: 24px;
@@ -466,6 +476,8 @@ img {
 }
 
 .soc-icon {
+    width: 16px;
+    height: 16px;
     fill:#FFFFFF;
 }
 
@@ -486,12 +498,16 @@ img {
     margin-bottom: 72px;
 }
 .cutomers-list-item{
+    
+}
+
+.customer{
     width: 168px;
     height: 88px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
 }
 
@@ -559,7 +575,8 @@ img {
     gap:48px 24px;
 }
 
-.projects-list-item:hover,
-.projects-list-item:focus{
+.project-item:hover,
+.project-item:focus{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
 }
